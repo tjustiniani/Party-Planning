@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So You Want To Throw A Party?</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <script src="https://use.fontawesome.com/d88dc4d383.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+
+    <div class="hero">
+      <div class="row column">
+        <a href=""><img src="assets/images/dbwhite.svg" alt="So You Want To Throw A Party? Logo" class="float-left"></a>
+        <div class="button-group float-right">
+          <a id="log-in" class="button hvr-grow">Log In</a>
+          <a id="sign-up" class="button hvr-grow">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tier-2">
+      <div class="row" id="search-screen">
+        <div class="medium-offset-3 medium-6 end column">
+          <div class="hero-search-filter-content">
+            <form class="hero-search-filter-form" action="">
+              <input id="search-input" class="hero-search-filter-form-find" type="text" autofocus placeholder="Enter a Party Theme"/>
+              <button id="search-button" class="button"><i class="fa fa-search"></i></button>
+            </form>
+            <p class="or">OR</p>
+            <button class="button hvr-pop" id="randomize">Randomize!</button>
+          </div>
+        </div>
+      </div><!--/#search-screen-->
+
+      <div class="row" id="category-btns">
+        <div class="column medium-8 medium-offset-2 end">
+          <div class="expanded button-group">
+            <a class="button" id="supplies-button">Supplies</a>
+            <a class="button" id="recipes-button">Recipes</a>
+            <a class="button" id="music-button">Music</a>
+            <a class="button" id="costumes-button">Costumes</a>
+            <a class="button" id="games-button">Games</a>
+          </div>
+        </div><!--/column-->
+      </div><!--/#category-btns-->
+    </div><!--/#tier-3-->
+    <div class="row" id="results-screen">
+      <div class="column">
+        <p class="theme-p">Current Theme: <span id="current-theme">Test Theme</span> </p>
+        <div class="api-results" id="supplies-results"></div>
+        <div class="api-results" id="recipes-results"></div>
+        <div class="api-results" id="music-results"></div>
+        <div class="api-results" id="costumes-results"></div>
+        <div class="api-results" id="games-results"></div>
+      </div>
+    </div><!--/results-screen-->
+
+    <div id="about-section">
+      <div class="row">
+        <div class="text-center column medium-8 medium-offset-2 end">
+          <p>This is a site for people who like to plan the perfect party. Either enter a theme in the search box, or click the randomize button to generate a theme. Have fun browsing the categorized results!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <div class="row">
+        <div class="column text-center">
+          <p>&copy; Group 2 - Project 1</p>
+        </div>
+      </div>
+    </footer> -->
+
+    <div id="signup-form">
+
+      <form class="callout text-center">
+        <p id="close">x</p>
+        <h2>Become A Member</h2>
+        <div class="floated-label-wrapper">
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" name="full name input" placeholder="Full name">
+        </div>
+        <div class="floated-label-wrapper">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email input" placeholder="Email">
+        </div>
+        <div class="floated-label-wrapper">
+          <label for="pass">Password</label>
+          <input type="password" id="pass" name="password input" placeholder="Password">
+        </div>
+        <input class="button expanded" type="submit" value="Sign up">
+      </form>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="assets/js/app.js">
+
+    </script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

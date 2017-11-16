@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test BING</title>
+</head>
+<body>
+  <h1>Test of BING API</h1>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script>
+    // var params = {
+    //           // Request parameters
+    //           "q": "site:mvark.blogspot.com",
+    //           "count": "50",
+    //           "offset": "0",
+    //           "mkt": "en-us",
+    //           //"safesearch": "Moderate",
+    //     "freshness":"Week",
+    //       };
+    $.ajax({
+            url: "https://api.cognitive.microsoft.com/bing/v5.0/videos/search?q=batman-costumes&mkt=en-us",
+            beforeSend: function(xhrObj){
+                // Request headers
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","416d8f635b1c4ecaaab8233c448a732b"); //replace value with your own key
+            },
+            type: "GET",
+            // Request body
+            //data: "{body}",
+        })
+        .done(function(response) {
+          console.log(response);
+        });
+
+           $.ajax({
+            url: "https://api.cognitive.microsoft.com/bing/v5.0/images/search?q=medieval-supplies&mkt=en-us",
+            beforeSend: function(xhrObj){
+                // Request headers
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","416d8f635b1c4ecaaab8233c448a732b"); //replace value with your own key
+            },
+            type: "GET",
+            // Request body
+            //data: "{body}",
+        })
+        .done(function(response) {
+          console.log(response);
+        });
+
+        var queryURL = "https://api.pinterest.com/v1/boards/arthurjake662/Medieval-Times/pins/?access_token=AcIfzzCjfj-4yjW7q3HKT9aGTZQzFMcz1y-KUwREE-aIeqAyBAAAAAA&fields=id%2Clink%2Cnote%2Curl%2Cboard%2Cimage"
+    $.ajax({
+      url: queryURL,
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+
+    
+    });
+
+       
+
+
+       
+  </script>
+</body>
+</html>
