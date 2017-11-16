@@ -1,1 +1,1 @@
-# PartyPlanning
+I worked with a group to develop a Party Planning app  that takes either the users input or a randomized input for a party theme and generates lists on costumes, supplies, recipies, music, costumes, and games for each search. This helps the user plan a theme-based party. I helped locate the APIs we used for our app which were: Pinterest API, Amazon API, BING Search.
